@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percabangan Switch</title>
+</head>
+<body>
+    <script>
+        var jawab=prompt("Kamu beruntung Silahkan pilih hadiah dengan mengetikan nomor 1-5");
+        var hadiah="";
+        switch (jawab) {
+            case 1:
+                hadiah="Motor Supra Fit";
+                break;
+            case 2:
+                hadiah="Motor Mega Pro";
+                break;
+            case 3:
+                hadiah="Motor RX king";
+                break;
+            case 4:
+                hadiah="Paket Haji & Umroh";
+                break;
+            case 5:
+                hadiah="Mobil Avanza";
+                break;
+            default:
+                document.write("<p> Oooopsss, Anda Salah Pilih Hadiah</p>");
+                break;
+        }
+        if (hadiah==="") {
+            document.write("<p> Kamu gagal Mendapatkan Hadiah </p>");
+        }else{
+            document.write("<h2> Selamat kamu mendapatkan "+ hadiah +"</h2>");
+        }
+    </script>
+</body>
+</html>

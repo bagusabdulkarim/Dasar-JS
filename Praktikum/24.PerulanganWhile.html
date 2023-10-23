@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Perulangan/Looping</title>
+</head>
+<body>
+    <script>
+        var ulangi = confirm("apakah anda mau mengulang ?");
+        var counter=0;
+        while(ulangi){
+            var jawab = confirm("apakah anda mau mengulang>");
+            if(jawab==false){
+                ulangi=false;
+            }
+        }
+        document.write("Perulangan sudah dilakukan sebanyak"+ counter+"kali");
+    </script>
+</body>
+</html>
